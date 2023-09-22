@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "meuimovel"
+version = "0.1.0"
+description = ""
+authors = ["André Aquino <andre.luiz.aquino30@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "2.1.0"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+lxml = "^4.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
