@@ -9,9 +9,14 @@ soup  = BeautifulSoup(requisicao.text,"html.parser")
 tree = html.fromstring(str(soup))
 
 
-elementos_a = soup.select('<a')
+# elementos_a = soup.select('a>')
+
+# # # Itere sobre os elementos <a> e imprima seus textos
+# for elemento in elementos_a:
+#     print(elemento)
+elementos_a = tree.xpath('//a')
 
 # Itere sobre os elementos <a> e imprima seus textos
 for elemento in elementos_a:
-    print(elemento)
-    
+    print(elemento.text_content())
+
